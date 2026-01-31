@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --black: #000;
+  --black-100: #000319;
+  --black-200: rgba(17, 25, 40, 0.75);
+  --black-300: rgba(255, 255, 255, 0.125);
+
+  --white: #FFF;
+  --white-100: #BEC1DD;
+  --white-200: #C1C2D3;
+
+  --blue-100: #E4ECFF;
+  --purple: #CBACF9;
+
+  --border: hsl(var(--border));
+  --input: hsl(var(--input));
+  --ring: hsl(var(--ring));
+  --background: hsl(var(--background));
+  --foreground: hsl(var(--foreground));
+
+  --primary: hsl(var(--primary));
+  --primary-foreground: hsl(var(--primary-foreground));
+
+  --secondary: hsl(var(--secondary));
+  --secondary-foreground: hsl(var(--secondary-foreground));
+
+  --destructive: hsl(var(--destructive));
+  --destructive-foreground: hsl(var(--destructive-foreground));
+
+  --muted: hsl(var(--muted));
+  --muted-foreground: hsl(var(--muted-foreground));
+
+  --accent: hsl(var(--accent));
+  --accent-foreground: hsl(var(--accent-foreground));
+
+  --popover: hsl(var(--popover));
+  --popover-foreground: hsl(var(--popover-foreground));
+
+  --card: hsl(var(--card));
+  --card-foreground: hsl(var(--card-foreground));
+
+  --radius: 0.5rem;
+}
+
+/* Background ripple effect Css Hero Section Home Start */
+
+@theme inline {
+  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1
+    var(--delay, 0ms);
+
+  @keyframes cell-ripple {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+}
+/* Background ripple effect Css Hero Section Home end */
+/* Shimmer Button For Resume CSS STart */
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
+}
+
+/* Shimmer Button For Resume CSS End */
